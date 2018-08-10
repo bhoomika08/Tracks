@@ -1,0 +1,92 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>Html Form</title>
+  </head>
+  <body>
+    <h1 align="center">HTML form exercise</h1>
+    <p align="center"><span style="color:red">Please note: </span>This Example demonstrates how HTML forms can be used. Submit button should <br>
+    submit the button and reset button should reset the form(revert the changes in the form fields).<br>
+    The form layout should be the same as below.</p>
+
+    <form action="#">
+      <div style="width:30%; margin:auto">
+        <div>
+          <h3>Contact form</h3>
+          Your name*: &nbsp;&nbsp;&nbsp;<input type="text" required><br><br>
+          Email*: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required><br><br>
+          Phone number: <input type="number"><br><br>
+          Website*: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="url" name="website" value="http://" style="width:250" required><br><br>
+          Comments*: <br>
+          <textarea name="comments" rows="10" cols="30"></textarea> <br>
+        </div>
+
+        <div>
+          <h3>Text field</h3>
+          Your name: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br>
+        </div>
+
+        <div>
+          <h3>Password field</h3>
+          Password: &nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password"><br>
+        </div>
+
+        <div>
+          <h3>Radio buttons</h3>
+          <p>Do you like pizza?</p>
+          <input type="radio" name="pizza" value="yes" checked> Yes <br>
+          <input type="radio" name="pizza" value="no" > No <br>
+          <input type="radio" name="pizza" value="maybe" > Maybe <br>
+          <input type="radio" name="pizza" value="nevertried" > Never tried <br>
+        </div>
+
+        <div>
+          <h3>Check Box</h3>
+          <input type="checkbox" name="checkbox" value="service" >Check this box if you like our service.<br>
+        </div> 
+
+        <div>
+        <h3>Text area</h3>
+        <p>Anything you wold like to say?</p>
+        <textarea name="suggestions" rows="8" cols="50"></textarea><br>
+        </div>
+
+        <div>
+        <h3>I Like</h3>
+        <select name="toppings" size="5" multiple>
+          <option value="mushrooms">mushrooms</option>
+          <option value="greenpeepers">green peppers</option>
+          <option value="onions">onions</option>
+          <option value="tomatoes">tomatoes</option>
+          <option value="olives">olives</option>
+          <option value="jalapeno">jalapeno</option>
+        </select>  
+        </div>
+
+        <div>
+        <h3>Menu</h3>
+        <p>Your favorite color:</p>
+        <input list="colors" name="color" >
+        <datalist id="colors" >
+          <option value="red">
+          <option vale="blue">
+          <option value="green">
+          <option value="yellow">
+          <option value="black">
+        </datalist>
+        </div>
+
+        <div>
+        <h3>Attach file</h3>
+        <input type="file" name="myFile">
+        </div>
+
+        <div>
+        <h3>Buttons</h3>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"> 
+        </div>
+      </div>
+    </form>
+  <body>
+</html>    
