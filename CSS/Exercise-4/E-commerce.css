@@ -1,0 +1,133 @@
+.container{
+	margin: auto;
+	height: auto;
+  width: 1000px;
+  font-family: calibri;
+}
+
+.header{
+	height: auto;
+	padding-top: 10px;
+}
+
+.header > p{
+	display: inline;
+	font-size: 18px;
+	font-weight: bold;
+  padding: 7px 18px 7px 150px;
+  border-right: 2px solid #eeeeee;
+  line-height: 30px;
+}
+
+.header > ul{
+	display: inline;
+	font-size: 15px;
+	color: #808080 ;
+	padding-left: 15px;
+}
+
+.header > img{
+	display: inline;
+	float: right;
+	padding-right: 150px;
+}
+
+.listing{
+	display: inline;
+	padding-right: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #808080;
+}
+
+.image{
+	position: relative;
+  top: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.category-text > h2{
+	text-align: center;
+	font-weight: bold;
+  font-size: 15px;
+  color: #696969;
+  width: 300px;
+  height: auto;
+  margin: 0px auto;
+ }
+
+.category-text > h2:before, .category-text > h2:after{
+	background-color: #DCDCDC;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 35%;
+}
+
+.category-text > h2:before{
+	right: 0.5em;
+	margin-left: -50%;
+}
+
+.category-text > h2:after{
+	left: 0.5em;
+	margin-right: -50%;
+}
+
+.image-container{
+  width: 800px;
+  margin: 25px auto;
+  height: 200px;
+}
+
+.product{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 10px;
+	padding: 5px;
+  border: 2px solid #eeeeee;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+}
+
+.product img{
+	display: inline;
+  margin: 5px;
+  width: 80px;
+  height: 100px;
+  border: 1px solid #ffffff;
+}
+
+.desc{
+	margin: 0px 20px;
+	width: 180px;
+	color: #C0C0C0;
+}
+
+.price{
+	margin: 5px;
+	padding-bottom: 10px;
+	color: #696969;
+}
+
+.brands{
+	clear: both;
+  width: 800px;
+  height: auto;
+  margin: 0px auto;
+}
+
+.brand{
+	float: left;
+	margin: 13px;
+  border: 1px solid #eeeeee;
+  height: 70px;
+  width: 124px;
+}
