@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Form</title>
+		<link rel="stylesheet" type="text/css" href="Css-Form.css">
+	</head>
+	<body class="font">
+		<div class="header">
+			<img src="vinsol-logo.png" alt="company-logo" class="image">
+			<div class="link">
+				<label for="mail">Email us at: <a href="mailto:sales@vinsol.com?Subject=Hello">sales@vinsol.com</a></label>&nbsp; &nbsp; 
+				<label for="skype">Skype: <a href="http://www.vinsol.com" target="_blank">Vinsol</a></label>
+	    </div>
+	  </div>
+    
+    <div class="table">
+    	<div class="table-row">
+	  		<p class="heading">Please fill the form below</p>
+	  	</div>
+	  	<div class="table-row">	
+				<form name="my form" action="" method="get" class="form">
+			  	<div class="table-row">
+			  		<div class="table-cell align-labels">	
+							<label for="fname" class="labels">First Name</label>
+						</div>
+						<div class="table-cell">
+							<input type="text" name="name" id="fname" class="inputs"/></br></br>
+					  </div>
+					</div> 	
+					<div class="table-row">
+				    <div class="table-cell align-labels">
+				    	<label for="lname" class="labels">Last Name</label>
+					  </div>
+					  <div class="table-cell">
+							<input type="text" name="lname" id="lname" class="inputs"/></br></br>
+						</div>
+					</div>	  
+				  <div class="table-row">
+				  	<div class="table-cell align-right">	
+							<label for="email" class="labels">Email Address</label>
+					  </div>
+					  <div class="table-cell">
+					  	<input type="email" name="email" id="email" class="inputs"/></br></br>
+						</div>
+					</div>	
+				  <div class="table-row">
+				  	<div class="table-cell align-labels">
+				  		<label for="pass" class="labels">Password</label>
+				  	</div>
+				  	<div class="table-cell">	
+							<input type="password" id="pass" class="inputs"/></br></br>
+						</div>
+					</div>	
+					<div class="table-row">
+						<div class="table-cell align-labels">
+				  		<label for="gender" class="labels">Gender</label>
+					  </div>
+					  <div class="table-cell">
+					  	<input type="radio" name="gender" value="male" checked="checked"/><label for="male" class="radio-label">Male</label>&nbsp;&nbsp;
+					  	<input type="radio" name="gender" value="female"/><label for="female" class="radio-label">Female</label></br></br>
+					  </div>
+					</div>
+				  <div class="table-row">
+				  	<div class="table-cell align-labels">
+		  		  	<label for="date" class="labels">Date Of Birth</label>
+					  </div>
+					  <div class="table-cell">
+						  <select class="date-of-birth">
+							  <option name="date" selected="selected">DD</option>
+							  <option name="date">01</option>
+							  <option name="date">02</option>
+						  </select>
+							<select class="date-of-birth">
+								<option name="month" selected="selected">MM</option>
+								<option name="month">02</option>				
+								<option name="month">03</option>				
+							</select>
+							<select class="date-of-birth">
+								<option name="year" selected="selected">YY</option>
+								<option name="year">1994</option>
+								<option name="year">1995</option>
+							</select></br></br>
+						</div>	
+					</div>
+					<div class="table-row">
+						<div class="table-cell align-labels">			
+					  	<label class="labels">Address</label>
+					  </div>
+					  <div class="table-cell">	
+				    	<textarea name="address" class="address"></textarea></br></br>
+				    </div>	
+			    </div>
+			    <div class="table-row">
+			    	<div class="table-cell">
+			    	</div>
+			    	<div class="table-cell">	
+			  			<input type="submit" value="Submit Details" class="button"/>
+			  		</div>
+			  	</div>			 	 	
+				</form>
+			</div>	
+		</div> 
+	</body>
+</html>
