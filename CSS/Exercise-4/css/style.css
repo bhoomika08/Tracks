@@ -55,7 +55,7 @@ a {
 
 .category {
   position: relative;
-  padding-top: 0;
+  padding-top: 0px;
   text-align: center;
   margin: auto;
 }
@@ -73,8 +73,8 @@ a {
 
 .category-heading {
   display: inline-block;
-  font-weight: normal;
   font-size: 14px;
+  color: #696969;
   width: auto;
   background: #ffffff;
   padding: 10px 10px;
@@ -82,7 +82,7 @@ a {
 
 .image-container {
   width: 80%;
-  margin: 10px auto;
+  margin: 5px auto;
   height: 200px;
 }
 
