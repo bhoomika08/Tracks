@@ -1,5 +1,4 @@
 package movieApp;
-
 import movieApp.Movie.MovieType;
 
 public class Main {

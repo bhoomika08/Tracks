@@ -53,7 +53,7 @@ public class Movie {
 		if(allMoviesList.get(movieCount).type == type) {
 		  System.out.println("-> " + allMoviesList.get(movieCount).name);
 		}
-	System.out.println();
+	  System.out.println();
 	}
 
 	public boolean isBlockbuster() {
