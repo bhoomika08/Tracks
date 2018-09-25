@@ -3,26 +3,25 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Movie {
-  String dish;
-  String name;
-  int year;
-  String language;
-  String genre;
-  String releaseDate;
-  Boolean blockbuster;
+  private String name;
+  private int year;
+  private String language;
+  private String genre;
+  private String releaseDate;
+  private Boolean blockbuster;
+  private MovieType type;
 
-  static ArrayList<Movie> allMoviesList = new ArrayList<Movie>();
+  private static ArrayList<Movie> allMoviesList = new ArrayList<Movie>();
 
-  public Movie(String name, int year, String language, String genre, String releaseDate) {
+  public Movie(String name, int year, String language, String genre, String releaseDate, Movie.MovieType type) {
     this.name = name;
     this.year = year;
     this.language = language;
     this.genre = genre;
     this.releaseDate = releaseDate;
+    this.type = type;
     allMoviesList.add(this);
   }
-
-  MovieType type;
 
   enum MovieType {
     TOLLYWOOD("Dosa"), HOLLYWOOD("Pepper Steak"), BOLLYWOOD("Dal Makhani");
@@ -37,23 +36,25 @@ public class Movie {
     }
   }
 
+  // Getting name of movie
+  public String getName() {
+    return name;
+  }
+
   // Getting all Movies
-  public static void getAllMovies() {
-    System.out.println("List of all Movies:");
-    for(int movieCount = 0; movieCount < allMoviesList.size(); movieCount++) {
-      System.out.println("->" + allMoviesList.get(movieCount).name);
-    }
-    System.out.println();
+  public static ArrayList<Movie> getAllMovies() {
+    return allMoviesList;
   }
 
   // Getting Movies by type
-  public static void getMoviesByType(Movie.MovieType type) {
-    System.out.println("List of " + type + " Movies:" );
-    for(int movieCount = 0; movieCount < allMoviesList.size(); movieCount++)
-    if(allMoviesList.get(movieCount).type == type) {
-      System.out.println("-> " + allMoviesList.get(movieCount).name);
+  public static ArrayList<Movie> getMoviesByType(Movie.MovieType type) {
+    ArrayList<Movie> moviesListByType = new ArrayList<Movie>();
+    for(int movieCount = 0; movieCount < allMoviesList.size(); movieCount++) {
+      if(allMoviesList.get(movieCount).type == type) {
+        moviesListByType.add(allMoviesList.get(movieCount));
+      }
     }
-    System.out.println();
+    return moviesListByType;
   }
 
   public boolean isBlockbuster() {
